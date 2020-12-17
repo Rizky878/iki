@@ -13,9 +13,9 @@ const moment = require("moment-timezone")
 const fs = require("fs")
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
-            + 'FN:Aris\n' // full name
-            + 'ORG:Creator AR15BOT;\n' // the organization of the contact
-            + 'TEL;type=CELL;type=VOICE;waid=6282387804410:+62 853-6493-7006\n' // WhatsApp ID + phone number
+            + 'FN:RIZKY\n' // full name
+            + 'ORG:Creator RIZKY BOT;\n' // the organization of the contact
+            + 'TEL;type=CELL;type=VOICE;waid=6282387804410:+62 823-8780-4410\n' // WhatsApp ID + phone number
             + 'END:VCARD'
 
 const time = moment().tz('Asia/Jakarta').format("HH:mm:ss")
@@ -395,7 +395,7 @@ client.on('message-new', async (m) => {
        case 'creator':
        case 'owner':
        client.sendMessage(id, {displayname: "Rizky", vcard: vcard}, MessageType.contact)
-       client.sendMessage(id, '*Nieh nomer pacarku...Eeh maksudku nomer owner/creator,chat ajah terus di save, nanti di back kok kak ><*',MessageType.text)
+       client.sendMessage(id, '*Nih nomer pacarku...Eeh maksudku nomer owner/creatorku,chat aja terus di save, nanti di back kok kak ><*',MessageType.text)
            await client.sendMessage(id, value,MessageType.text)
            break    
        case 'lirik':
