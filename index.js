@@ -15,7 +15,7 @@ const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
             + 'FN:Aris\n' // full name
             + 'ORG:Creator AR15BOT;\n' // the organization of the contact
-            + 'TEL;type=CELL;type=VOICE;waid=6285722553839:+62 857-2255-3839\n' // WhatsApp ID + phone number
+            + 'TEL;type=CELL;type=VOICE;waid=6282387804410:+62 853-6493-7006\n' // WhatsApp ID + phone number
             + 'END:VCARD'
 
 const time = moment().tz('Asia/Jakarta').format("HH:mm:ss")
@@ -24,12 +24,12 @@ const arrayBulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Jul
 const bulan = arrayBulan[moment().format('MM') - 1]
 
 const config = {
-    A187: '👾AR15BOT👾',
-    instagram: 'https://instagram.com/_sadboy.ig',
-    nomer: 'wa.me/6285722553839',
-    aktif: '24 JAM',
-    youtube: 'https://youtube.com/channel/UCGYLWtyT9IADYNUiK0uZiGg',
-    whatsapp: 'https://chat.whatsapp.com/DSSHmG2KjKJLoFp9B9mkVs',
+    A187: 'Rizky Bot',
+    instagram: 'https://instagram.com/_rizkyfadilah8',
+    nomer: 'wa.me/62387804410',
+    aktif: 'TERGANTUNG JARINGAN',
+    youtube: 'https://www.youtube.com/channel/UCwuFtaAemHVPO67Aopv6BXg',
+    whatsapp: 'https://chat.whatsapp.com/LLCSpSL2S8A1NJwTnMIgWY',
     tanggal: `TANGGAL: ${moment().format('DD')} ${bulan} ${moment().format('YYYY')}`,
     waktu: time
 }
